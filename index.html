@@ -1,757 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mercer Made — Affordable Website Design for Small Businesses in Alpine, TX</title>
-<meta name="description" content="Mercer Made builds professional, affordable websites for small businesses. Delivered in under a week, with local support in Alpine, Texas and the Big Bend region. Free mockup before you pay anything.">
-<meta name="keywords" content="website design, affordable website design, cheap website design, professional website design, small business website, local business website, web designer Alpine Texas, Big Bend web design, web developer near me, small business friendly website design">
-<meta property="og:title" content="Mercer Made — Websites for Small Businesses">
-<meta property="og:description" content="Professional, affordable websites for small businesses, built and supported locally in Alpine, TX. Free mockup before you pay.">
-<meta property="og:type" content="website">
-<meta name="robots" content="index, follow">
-<meta name="author" content="Mercer Fleming">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mercer Made — Website Design for Small Businesses in Alpine, TX</title>
+<meta name="description" content="Mercer Made designs and builds affordable, fast websites for small businesses in Alpine and the Big Bend. See sample sites and pricing.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  "name": "Mercer Made",
-  "alternateName": "Mercer Fleming Web Design",
-  "description": "Affordable, professional website design and ongoing website care for small businesses. Custom sites delivered in under a week, with local, in-person support in Alpine, Texas and the Big Bend region.",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Alpine",
-    "addressRegion": "TX",
-    "addressCountry": "US"
-  },
-  "telephone": "+19155408410",
-  "areaServed": ["Alpine TX", "Big Bend Region", "West Texas"],
-  "priceRange": "$$",
-  "founder": {
-    "@type": "Person",
-    "name": "Mercer Fleming"
-  }
-}
-</script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-  :root{
-    --paper:      #EEE0C4;
-    --paper-alt:  #E3D0A8;
-    --card:       #FFFDF8;
-    --ink:        #201F2B;
-    --ink-soft:   #5B5768;
-    --coral:      #E8604C;
-    --coral-d:    #C94834;
-    --amber:      #F0A83B;
-    --mint:       #3FA184;
-    --line:       rgba(32,31,43,0.14);
-
-    --display: 'Sora', sans-serif;
-    --body: 'Inter', sans-serif;
-    --mono: 'JetBrains Mono', monospace;
-  }
-
-  *{ box-sizing:border-box; }
-  html{ scroll-behavior:smooth; }
-  body{
-    margin:0; background:var(--paper); color:var(--ink);
-    font-family:var(--body); line-height:1.6; -webkit-font-smoothing:antialiased;
-  }
-  img{ max-width:100%; display:block; }
-  a{ color:inherit; }
-  h1,h2,h3{ font-family:var(--display); margin:0; }
-  .wrap{ max-width:1160px; margin:0 auto; padding:0 32px; }
-  section{ position:relative; }
-
-  .eyebrow{
-    font-family:var(--mono); font-size:0.72rem; letter-spacing:0.08em; text-transform:uppercase;
-    color:var(--coral-d); display:inline-flex; align-items:center; gap:8px; margin-bottom:14px;
-  }
-  .eyebrow::before{ content:"//"; color:var(--amber); }
-
-  /* ---------- Browser-window signature ---------- */
-  .browser-frame{
-    background:var(--card); border-radius:14px; border:1px solid var(--line);
-    overflow:hidden; box-shadow:0 18px 40px rgba(32,31,43,0.10);
-  }
-  .browser-bar{
-    display:flex; align-items:center; gap:8px; padding:11px 14px;
-    background:var(--paper-alt); border-bottom:1px solid var(--line);
-  }
-  .browser-dot{ width:9px; height:9px; border-radius:50%; }
-  .browser-dot.r{ background:#E8604C; }
-  .browser-dot.y{ background:#F0A83B; }
-  .browser-dot.g{ background:#3FA184; }
-  .browser-url{
-    margin-left:8px; background:var(--card); border-radius:6px; padding:4px 12px;
-    font-family:var(--mono); font-size:0.7rem; color:var(--ink-soft); flex:1;
-  }
-
-  /* ---------- Nav ---------- */
-  header{
-    position:sticky; top:0; z-index:50;
-    background:rgba(238,224,196,0.92); backdrop-filter:blur(6px);
-    border-bottom:1px solid var(--line);
-  }
-  nav{
-    max-width:1160px; margin:0 auto; padding:16px 32px;
-    display:flex; align-items:center; justify-content:space-between;
-  }
-  .logo{ display:flex; align-items:center; gap:10px; text-decoration:none; }
-  .logo .mark{
-    width:30px; height:30px; border-radius:8px; background:var(--ink);
-    display:flex; align-items:center; justify-content:center;
-    font-family:var(--mono); font-size:0.8rem; color:var(--paper); font-weight:700;
-  }
-  .logo .word{ font-family:var(--display); font-weight:700; font-size:1.15rem; }
-  .nav-links{ display:flex; gap:26px; list-style:none; margin:0; padding:0; font-size:0.9rem; font-weight:500; }
-  .nav-links a{ text-decoration:none; }
-  .nav-links a:hover{ color:var(--coral-d); }
-  .nav-cta{
-    background:var(--coral); color:#fff; font-weight:600; font-size:0.86rem;
-    padding:11px 20px; text-decoration:none; border-radius:8px;
-  }
-  .nav-cta:hover{ background:var(--coral-d); }
-  .nav-toggle{ display:none; background:none; border:none; cursor:pointer; }
-  .nav-toggle span{ display:block; width:22px; height:2px; background:var(--ink); margin:5px 0; }
-
-  /* ---------- Hero ---------- */
-  .hero{ padding:70px 0 50px; }
-  .hero-inner{ display:grid; grid-template-columns:1.05fr 0.95fr; gap:50px; align-items:center; }
-  .hero h1{ font-size:clamp(2.5rem,5vw,3.7rem); font-weight:800; line-height:1.06; }
-  .hero h1 .accent{ color:var(--coral); }
-  .hero p.lede{ font-size:1.08rem; color:var(--ink-soft); max-width:46ch; margin:20px 0 30px; }
-  .hero-ctas{ display:flex; gap:14px; flex-wrap:wrap; }
-  .btn{ display:inline-block; text-decoration:none; font-weight:600; font-size:0.9rem; padding:14px 26px; border-radius:8px; }
-  .btn-solid{ background:var(--coral); color:#fff; border:none; cursor:pointer; }
-  .btn-solid:hover{ background:var(--coral-d); }
-  .btn-outline{ border:1.5px solid var(--ink); color:var(--ink); }
-  .btn-outline:hover{ background:var(--ink); color:var(--paper); }
-
-  .hero-mock .browser-bar .browser-url::before{ content:"yourbusiness.com"; }
-  .hero-mock .mock-body{ padding:26px; display:flex; flex-direction:column; gap:14px; }
-  .mock-line{ height:12px; border-radius:6px; background:var(--paper-alt); }
-  .mock-block{ height:90px; border-radius:10px; background:linear-gradient(120deg,var(--coral),var(--amber)); opacity:0.85; }
-
-  .guarantee-strip{ margin-top:52px; border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
-  .guarantee-strip .wrap{ display:grid; grid-template-columns:repeat(4,1fr); }
-  .gitem{ padding:20px 22px; border-left:1px solid var(--line); }
-  .gitem:first-child{ border-left:none; padding-left:0; }
-  .gitem .num{ font-family:var(--display); font-size:1.7rem; font-weight:700; color:var(--coral-d); }
-  .gitem .label{ font-family:var(--mono); font-size:0.64rem; letter-spacing:0.03em; color:var(--ink-soft); text-transform:uppercase; }
-
-  /* ---------- Section generic ---------- */
-  .section{ padding:96px 0; }
-  .section-head{ max-width:640px; margin:0 auto 48px; text-align:center; }
-  .section-head h2{ font-size:clamp(1.9rem,3.6vw,2.6rem); font-weight:800; }
-  .section-alt{ background:var(--paper-alt); }
-
-  /* ---------- Work / portfolio ---------- */
-  .work-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:26px; }
-  .work-card{ overflow:hidden; }
-  .work-thumb{ padding:22px; display:flex; flex-direction:column; gap:10px; }
-  .work-thumb .wline{ height:10px; border-radius:5px; background:var(--paper-alt); }
-  .work-thumb .wblock{ height:80px; border-radius:8px; }
-  .work-body{ padding:20px 24px 24px; border-top:1px solid var(--line); }
-  .work-body h3{ font-size:1.15rem; font-weight:700; margin-bottom:6px; }
-  .work-body p{ color:var(--ink-soft); font-size:0.9rem; margin:0 0 12px; }
-  .work-tags{ display:flex; gap:8px; flex-wrap:wrap; }
-  .work-tags span{
-    font-family:var(--mono); font-size:0.68rem; background:var(--paper-alt);
-    padding:5px 10px; border-radius:6px; color:var(--ink-soft);
-  }
-  .section-alt .work-tags span{ background:var(--paper); }
-
-  /* ---------- Pricing ---------- */
-  .pricing-toggle-note{ text-align:center; font-family:var(--mono); font-size:0.82rem; color:var(--ink-soft); margin-bottom:44px; }
-  .price-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:24px; margin-bottom:64px; }
-  .price-card{
-    background:var(--card); border-radius:16px; border:1px solid var(--line);
-    padding:34px 28px; display:flex; flex-direction:column;
-  }
-  .price-card.featured{ border:2px solid var(--coral); position:relative; transform:translateY(-8px); }
-  .price-card.featured::before{
-    content:"Most popular"; position:absolute; top:-13px; left:28px;
-    background:var(--coral); color:#fff; font-family:var(--mono); font-size:0.65rem;
-    letter-spacing:0.04em; text-transform:uppercase; padding:5px 12px; border-radius:20px;
-  }
-  .price-card h3{ font-size:1.2rem; font-weight:700; margin-bottom:6px; }
-  .price-card .price{ font-family:var(--display); font-size:2.2rem; font-weight:800; margin:10px 0 4px; }
-  .price-card .price span{ font-family:var(--mono); font-size:0.85rem; font-weight:400; color:var(--ink-soft); }
-  .price-card .pdesc{ color:var(--ink-soft); font-size:0.88rem; margin-bottom:20px; }
-  .price-card ul{ list-style:none; margin:0 0 26px; padding:0; flex:1; }
-  .price-card li{
-    padding:9px 0; border-top:1px solid var(--line); font-size:0.88rem;
-    display:flex; gap:9px; align-items:baseline;
-  }
-  .price-card li::before{ content:"✓"; color:var(--mint); font-weight:700; }
-
-  .care-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
-  .care-card{
-    background:var(--card); border-radius:16px; border:1px solid var(--line); padding:30px 26px;
-  }
-  .care-card.featured{ border:2px solid var(--mint); }
-  .care-card h3{ font-size:1.1rem; font-weight:700; margin-bottom:4px; }
-  .care-card .price{ font-family:var(--display); font-size:1.7rem; font-weight:800; color:var(--mint); margin:6px 0 14px; }
-  .care-card .price span{ font-family:var(--mono); font-size:0.78rem; font-weight:400; color:var(--ink-soft); }
-  .care-card ul{ list-style:none; margin:0; padding:0; }
-  .care-card li{ padding:8px 0; border-top:1px solid var(--line); font-size:0.84rem; display:flex; gap:8px; align-items:baseline; }
-  .care-card li::before{ content:"✓"; color:var(--mint); font-weight:700; }
-
-  /* ---------- Compact add-on cards ---------- */
-  .addon-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:22px; margin-top:26px; }
-  .addon-card{
-    background:var(--card); border:1px solid var(--line); border-radius:16px;
-    padding:26px 24px; display:flex; flex-direction:column;
-  }
-  .addon-card .aicon{ font-size:1.6rem; margin-bottom:10px; }
-  .addon-card h3{ font-size:1.08rem; font-weight:700; margin-bottom:4px; }
-  .addon-card .aprice{ font-family:var(--mono); font-size:0.86rem; color:var(--coral-d); font-weight:700; margin-bottom:10px; }
-  .addon-card p{ color:var(--ink-soft); font-size:0.88rem; margin:0 0 14px; flex:1; }
-  .addon-card .atime{
-    font-family:var(--mono); font-size:0.7rem; letter-spacing:0.03em; text-transform:uppercase;
-    color:var(--mint); display:inline-flex; align-items:center; gap:6px; align-self:flex-start;
-    background:rgba(63,161,132,0.12); padding:5px 12px; border-radius:20px;
-  }
-
-  /* ---------- Referral banner ---------- */
-  .referral-banner{
-    background:linear-gradient(120deg, var(--coral), var(--amber));
-    border-radius:20px; padding:44px 48px;
-    display:flex; align-items:center; justify-content:space-between; gap:32px;
-    flex-wrap:wrap; color:#fff;
-  }
-  .referral-banner .rb-icon{ font-size:2.6rem; line-height:1; }
-  .referral-banner h3{ font-size:1.6rem; font-weight:800; margin-bottom:6px; }
-  .referral-banner p{ margin:0; opacity:0.95; font-size:0.96rem; max-width:52ch; }
-  .referral-banner .btn{ background:#fff; color:var(--coral-d); white-space:nowrap; }
-  .referral-banner .btn:hover{ background:var(--ink); color:#fff; }
-
-  /* ---------- Process ---------- */
-  .process-list{ display:flex; flex-direction:column; }
-  .process-row{
-    display:grid; grid-template-columns:80px 1fr 1.3fr; gap:26px;
-    padding:28px 0; border-top:1px solid var(--line); align-items:start;
-  }
-  .process-list .process-row:last-child{ border-bottom:1px solid var(--line); }
-  .process-row .step-num{ font-family:var(--display); font-size:2.2rem; font-weight:800; color:var(--coral); opacity:0.8; }
-  .process-row h3{ font-size:1.15rem; font-weight:700; padding-top:4px; }
-  .process-row p{ margin:8px 0 0; color:var(--ink-soft); font-size:0.92rem; max-width:52ch; }
-
-  /* ---------- Why / guarantees grid ---------- */
-  .why-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:20px; }
-  .why-card{
-    background:var(--card); border:1px solid var(--line); border-radius:14px;
-    padding:24px 20px;
-  }
-  .section-alt .why-card{ background:var(--paper); }
-  .why-card .wicon{
-    width:38px; height:38px; border-radius:10px; background:var(--ink);
-    display:flex; align-items:center; justify-content:center; color:var(--paper);
-    font-family:var(--mono); font-weight:700; font-size:0.95rem; margin-bottom:14px;
-  }
-  .why-card h3{ font-size:0.96rem; font-weight:700; margin-bottom:6px; }
-  .why-card p{ color:var(--ink-soft); font-size:0.82rem; margin:0; }
-
-  /* ---------- Contact ---------- */
-  .contact-grid{ display:grid; grid-template-columns:1fr 1fr; gap:56px; }
-  .contact-info h3{ font-size:1.6rem; font-weight:800; margin-bottom:18px; }
-  .info-row{ display:flex; gap:16px; padding:16px 0; border-top:1px solid var(--line); }
-  .info-row:last-child{ border-bottom:1px solid var(--line); }
-  .info-row .k{ font-family:var(--mono); font-size:0.68rem; color:var(--ink-soft); text-transform:uppercase; min-width:90px; padding-top:2px; }
-  .info-row .v{ font-weight:500; }
-  .info-row a.v{ text-decoration:none; }
-  .info-row a.v:hover{ color:var(--coral-d); }
-
-  form{ display:flex; flex-direction:column; gap:15px; background:var(--card); padding:28px; border-radius:14px; border:1px solid var(--line); }
-  .field{ display:flex; flex-direction:column; gap:6px; }
-  .field label{ font-family:var(--mono); font-size:0.66rem; text-transform:uppercase; letter-spacing:0.04em; color:var(--ink-soft); }
-  .field input, .field textarea, .field select{
-    font-family:var(--body); font-size:0.94rem; padding:11px 14px;
-    background:var(--paper); border:1px solid var(--line); color:var(--ink); border-radius:8px;
-  }
-  .field input:focus, .field textarea:focus, .field select:focus{ outline:2px solid var(--coral); outline-offset:1px; }
-  form .btn-solid{ align-self:flex-start; margin-top:4px; }
-  .form-note{ font-family:var(--mono); font-size:0.72rem; color:var(--mint); margin-top:2px; }
-
-  footer{ border-top:1px solid var(--line); padding:40px 0; background:var(--ink); color:var(--paper); }
-  footer .wrap{ display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px; }
-  footer .logo .word{ color:var(--paper); }
-  footer .logo .mark{ background:var(--coral); color:var(--ink); }
-  footer .foot-links{ display:flex; gap:22px; list-style:none; margin:0; padding:0; font-size:0.85rem; }
-  footer .foot-links a{ text-decoration:none; color:#A8A3B5; }
-  footer .foot-links a:hover{ color:var(--paper); }
-  footer .fine{ font-family:var(--mono); font-size:0.68rem; color:#7C7789; margin-top:20px; }
-
-  @media (max-width:960px){
-    .hero-inner{ grid-template-columns:1fr; }
-    .hero-mock{ order:-1; }
-    .guarantee-strip .wrap{ grid-template-columns:repeat(2,1fr); }
-    .gitem:nth-child(3){ border-left:none; }
-    .work-grid{ grid-template-columns:1fr; }
-    .price-grid{ grid-template-columns:1fr; }
-    .price-card.featured{ transform:none; }
-    .care-grid{ grid-template-columns:1fr; }
-    .addon-grid{ grid-template-columns:1fr; }
-    .why-grid{ grid-template-columns:repeat(2,1fr); }
-    .process-row{ grid-template-columns:56px 1fr; }
-    .process-row > p{ grid-column:2/3; }
-    .contact-grid{ grid-template-columns:1fr; }
-  }
-  @media (max-width:620px){
-    .nav-links, .nav-cta{ display:none; }
-    .nav-toggle{ display:block; }
-    .why-grid{ grid-template-columns:1fr; }
-  }
-  @media (prefers-reduced-motion:reduce){
-    html{ scroll-behavior:auto; }
-    *{ transition:none !important; }
-  }
+  :root{--paper:#EEE0C4;--card:#FFFDF8;--ink:#201F2B;--ink-soft:#5B5768;--coral:#E8604C;--coral-d:#C94834;--amber:#F0A83B;--line:rgba(32,31,43,.14)}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--paper);color:var(--ink);font:400 17px/1.6 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  a{color:inherit}
+  .wrap{max-width:760px;margin:0 auto;padding:0 24px}
+  header{border-bottom:1px solid var(--line)}
+  nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+  .brand{font:700 20px Sora,sans-serif;text-decoration:none;letter-spacing:-.01em}
+  .brand span{color:var(--coral)}
+  nav ul{display:flex;gap:24px;list-style:none;font-weight:500;font-size:15px}
+  nav ul a{text-decoration:none;color:var(--ink-soft)}
+  nav ul a:hover{color:var(--ink)}
+  .intro{padding:72px 0 48px}
+  .eyebrow{font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--coral-d);margin-bottom:14px}
+  h1{font:700 clamp(32px,6vw,46px)/1.1 Sora,sans-serif;letter-spacing:-.02em;margin-bottom:20px}
+  .intro p{color:var(--ink-soft);max-width:600px}
+  .intro p+p{margin-top:12px}
+  section h2{font:600 22px Sora,sans-serif;margin-bottom:6px}
+  section .sub{color:var(--ink-soft);font-size:15px;margin-bottom:22px}
+  .sites{list-style:none;display:grid;gap:14px;padding-bottom:64px}
+  .sites a{display:flex;align-items:center;justify-content:space-between;gap:16px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 22px;text-decoration:none;transition:transform .15s,border-color .15s,box-shadow .15s}
+  .sites a:hover{transform:translateY(-2px);border-color:var(--coral);box-shadow:0 8px 24px rgba(32,31,43,.08)}
+  .sites strong{display:block;font:600 18px Sora,sans-serif;margin-bottom:2px}
+  .sites small{color:var(--ink-soft);font-size:14px}
+  .arrow{flex:none;width:36px;height:36px;border-radius:50%;background:var(--paper);display:grid;place-items:center;color:var(--coral-d);font-weight:600}
+  .contact{border-top:1px solid var(--line);padding:48px 0 64px}
+  .btn{display:inline-block;margin-top:14px;background:var(--coral);color:#fff;text-decoration:none;font-weight:600;padding:12px 22px;border-radius:999px}
+  .btn:hover{background:var(--coral-d)}
+  footer{color:var(--ink-soft);font-size:13px;padding:0 0 32px}
+  @media (max-width:520px){nav ul{gap:16px}}
 </style>
 </head>
 <body>
-
 <header>
-  <nav>
-    <a href="#top" class="logo">
-      <span class="mark">&lt;/&gt;</span>
-      <span class="word">Mercer Made</span>
-    </a>
-    <ul class="nav-links">
-      <li><a href="#work">Work</a></li>
-      <li><a href="#pricing">Pricing</a></li>
-      <li><a href="#process">Process</a></li>
-      <li><a href="#why">Guarantees</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <a href="#contact" class="nav-cta">Get a free mockup</a>
-    <button class="nav-toggle" aria-label="menu"><span></span><span></span><span></span></button>
-  </nav>
+  <div class="wrap">
+    <nav>
+      <a class="brand" href="/">Mercer<span>Made</span></a>
+      <ul>
+        <li><a href="#work">Work</a></li>
+        <li><a href="/pricing/">Pricing</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
 
-<main id="top">
+<main class="wrap">
+  <div class="intro">
+    <p class="eyebrow">Web design · Alpine, TX</p>
+    <h1>Websites for small businesses, built fast and priced fairly.</h1>
+    <p>I'm Mercer Fleming. I design and build websites for local businesses: clean, mobile-friendly, and set up so customers can find you on Google.</p>
+    <p>Below are a few sites I've designed. Click any of them to see the full thing.</p>
+  </div>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="wrap hero-inner">
-      <div>
-        <p class="eyebrow">Web design for small businesses</p>
-        <h1>A website that actually <span class="accent">brings you customers.</span></h1>
-        <p class="lede">I'm Mercer Fleming — I design and build websites for local businesses, fast and affordable, with no agency overhead or confusing tech jargon. Based right here in Alpine, TX, so if you'd rather talk strategy over coffee than over email, I can meet in person.</p>
-        <div class="hero-ctas">
-          <a href="#contact" class="btn btn-solid">Get a free mockup</a>
-          <a href="#pricing" class="btn btn-outline">See pricing</a>
-        </div>
-      </div>
-      <div class="hero-mock browser-frame">
-        <div class="browser-bar">
-          <span class="browser-dot r"></span><span class="browser-dot y"></span><span class="browser-dot g"></span>
-          <span class="browser-url"></span>
-        </div>
-        <div class="mock-body">
-          <div class="mock-block"></div>
-          <div class="mock-line" style="width:70%;"></div>
-          <div class="mock-line" style="width:45%;"></div>
-          <div style="display:flex; gap:10px; margin-top:6px;">
-            <div class="mock-line" style="width:30%; height:34px; border-radius:8px; background:var(--coral); opacity:0.9;"></div>
-            <div class="mock-line" style="width:30%; height:34px; border-radius:8px;"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="guarantee-strip">
-      <div class="wrap">
-        <div class="gitem"><div class="num">24 hrs</div><div class="label">Guaranteed response time</div></div>
-        <div class="gitem"><div class="num">&lt; 1 week</div><div class="label">Every site delivered</div></div>
-        <div class="gitem"><div class="num">3 rounds</div><div class="label">Revisions on every build</div></div>
-        <div class="gitem"><div class="num">Free</div><div class="label">Mockup before you pay</div></div>
-      </div>
-    </div>
+  <section id="work">
+    <h2>Sample sites</h2>
+    <p class="sub">Concept designs built to show what a site could look like for each business.</p>
+    <ul class="sites">
+      <li><a href="/work/cheshire-cat-antiques/"><div><strong>Cheshire Cat Antiques</strong><small>Antiques &amp; Texana · Alpine, TX</small></div><span class="arrow">→</span></a></li>
+      <li><a href="/work/sharpside-construction/"><div><strong>Sharpside Construction</strong><small>General contractor · Alpine, TX</small></div><span class="arrow">→</span></a></li>
+      <li><a href="/work/mercer-properties/"><div><strong>Mercer Properties</strong><small>Office leasing · El Paso, TX</small></div><span class="arrow">→</span></a></li>
+    </ul>
   </section>
 
-  <!-- WORK -->
-  <section class="section" id="work">
-    <div class="wrap">
-      <div class="section-head">
-        <div class="eyebrow" style="justify-content:center; display:flex;">Recent work</div>
-        <h2>A couple of sites I've built</h2>
-      </div>
-      <div class="work-grid">
-        <div class="work-card browser-frame">
-          <div class="browser-bar">
-            <span class="browser-dot r"></span><span class="browser-dot y"></span><span class="browser-dot g"></span>
-            <span class="browser-url" style="position:relative;"><span style="opacity:0.7;">sharpsideconstruction.com</span></span>
-          </div>
-          <div class="work-thumb">
-            <div class="wblock" style="background:linear-gradient(135deg,#A8461F,#8C8677);"></div>
-            <div class="wline" style="width:60%;"></div>
-            <div class="wline" style="width:40%;"></div>
-          </div>
-          <div class="work-body">
-            <h3>Sharpside Construction</h3>
-            <p>A full site for a local general contractor — services, process, and a lead-gen contact form.</p>
-            <div class="work-tags"><span>General Contractor</span><span>Alpine, TX</span></div>
-          </div>
-        </div>
-        <div class="work-card browser-frame">
-          <div class="browser-bar">
-            <span class="browser-dot r"></span><span class="browser-dot y"></span><span class="browser-dot g"></span>
-            <span class="browser-url" style="position:relative;"><span style="opacity:0.7;">mercerproperties.example</span></span>
-          </div>
-          <div class="work-thumb">
-            <div class="wblock" style="background:linear-gradient(135deg,#1C7C6E,#C4872B);"></div>
-            <div class="wline" style="width:55%;"></div>
-            <div class="wline" style="width:35%;"></div>
-          </div>
-          <div class="work-body">
-            <h3>Mercer Properties</h3>
-            <p>Office leasing site with a live building gallery and available-spaces browser.</p>
-            <div class="work-tags"><span>Office Leasing</span><span>El Paso, TX</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
+  <section class="contact" id="contact">
+    <h2>Want one for your business?</h2>
+    <p class="sub">Call or text and I'll put together a free mockup before you pay anything.</p>
+    <a class="btn" href="tel:+19155408410">Call (915) 540-8410</a>
   </section>
-
-  <!-- PRICING -->
-  <section class="section section-alt" id="pricing">
-    <div class="wrap">
-      <div class="section-head">
-        <div class="eyebrow" style="justify-content:center; display:flex;">Pricing</div>
-        <h2>Simple pricing, no surprises</h2>
-      </div>
-      <p class="pricing-toggle-note">One-time build cost, plus an optional monthly care plan to keep it running</p>
-
-      <div class="price-grid">
-        <div class="price-card">
-          <h3>Starter</h3>
-          <div class="price">$350</div>
-          <p class="pdesc">A single, polished page — perfect for getting found online fast.</p>
-          <ul>
-            <li>1-page custom site</li>
-            <li>Mobile-responsive design</li>
-            <li>Contact form</li>
-            <li>Basic SEO setup</li>
-            <li>Delivered in under 1 week</li>
-            <li>3 rounds of revisions included</li>
-          </ul>
-          <a href="#contact" class="btn btn-outline">Start here</a>
-        </div>
-        <div class="price-card featured">
-          <h3>Standard</h3>
-          <div class="price">$750</div>
-          <p class="pdesc">The most common pick — a full small-business site, done right.</p>
-          <ul>
-            <li>Up to 5 pages</li>
-            <li>Custom design, not a template</li>
-            <li>Gallery, booking, or menu section</li>
-            <li>Mobile-responsive design</li>
-            <li>Contact form</li>
-            <li>Basic SEO setup</li>
-            <li>Delivered in under 1 week</li>
-            <li>3 rounds of revisions included</li>
-          </ul>
-          <a href="#contact" class="btn btn-solid">Get started</a>
-        </div>
-        <div class="price-card">
-          <h3>Custom Build</h3>
-          <div class="price">From $1,200</div>
-          <p class="pdesc">For bigger needs — booking systems, online stores, multi-location sites.</p>
-          <ul>
-            <li>Unlimited pages</li>
-            <li>Booking / e-commerce integration</li>
-            <li>Full SEO setup</li>
-            <li>Free 30-min strategy call</li>
-            <li>Mobile-responsive design</li>
-            <li>Contact form</li>
-            <li>Delivered in under 1 week</li>
-            <li>3 rounds of revisions included</li>
-          </ul>
-          <a href="#contact" class="btn btn-outline">Get a quote</a>
-        </div>
-      </div>
-
-      <div class="section-head">
-        <div class="eyebrow" style="justify-content:center; display:flex;">Ongoing care</div>
-        <h2>Monthly plans to keep it working</h2>
-      </div>
-      <div class="care-grid">
-        <div class="care-card">
-          <h3>Basic Care</h3>
-          <div class="price">$40<span>/mo</span></div>
-          <ul>
-            <li>Hosting &amp; domain included</li>
-            <li>Uptime monitoring &amp; backups</li>
-            <li>1 free minor update per week</li>
-          </ul>
-        </div>
-        <div class="care-card featured">
-          <h3>Growth Care</h3>
-          <div class="price">$120<span>/mo</span></div>
-          <ul>
-            <li>Unlimited revisions</li>
-            <li>Monthly content updates</li>
-            <li>Basic SEO upkeep</li>
-            <li>Everything in Basic Care</li>
-          </ul>
-        </div>
-        <div class="care-card">
-          <h3>Premium Care</h3>
-          <div class="price">$250<span>/mo</span></div>
-          <ul>
-            <li>Same-day priority support</li>
-            <li>Monthly analytics report</li>
-            <li>1 new feature per quarter</li>
-            <li>Everything in Growth Care</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="section-head" style="margin-top:70px;">
-        <div class="eyebrow" style="justify-content:center; display:flex;">Add-ons</div>
-        <h2>A few extra ways I can help</h2>
-        <p style="color:var(--ink-soft); text-align:center; margin-top:8px;">Optional — add any of these on top of a care plan. No pressure, no jargon, just what actually gets you more customers.</p>
-      </div>
-      <div class="care-grid" style="grid-template-columns:1fr; max-width:640px; margin:0 auto;">
-        <div class="care-card" style="border:2px solid var(--amber);">
-          <h3>Online Ordering Add-On</h3>
-          <div class="price">$85<span>/mo + $400 one-time setup</span></div>
-          <ul>
-            <li>Custom order/menu page connected to secure checkout</li>
-            <li>Order notifications by email or text</li>
-            <li>Menu &amp; pricing updates included</li>
-            <li>Add-on to any care plan</li>
-          </ul>
-          <p style="font-size:0.82rem; color:var(--ink-soft); margin:16px 0 0;">Built for pickup and simple delivery orders — undercuts platforms like ChowNow ($150–300/mo) and Toast, without the per-order fees. It's not a full POS or kitchen-ticketing system, so it's best for businesses taking a manageable volume of online orders rather than high-volume restaurants.</p>
-        </div>
-      </div>
-
-      <div class="addon-grid">
-        <div class="addon-card">
-          <div class="aicon">🗺️</div>
-          <h3>Local SEO Package</h3>
-          <div class="aprice">$250 one-time</div>
-          <p>I make sure your business actually shows up when people search for you — on Google Maps, Apple Maps, and Yelp — so you get found before the other guy does.</p>
-          <span class="atime">⏱ Done in about a week</span>
-        </div>
-
-        <div class="addon-card">
-          <div class="aicon">⭐</div>
-          <h3>Review Widget</h3>
-          <div class="aprice">$150 setup + $15/mo</div>
-          <p>Your best Google reviews show up right on your website automatically — no copying and pasting. When a customer leaves you a new 5-star review, it just appears.</p>
-          <span class="atime">⏱ Set up in 2–3 days</span>
-        </div>
-
-        <div class="addon-card">
-          <div class="aicon">📋</div>
-          <h3>Google Business Profile Management</h3>
-          <div class="aprice">$150/mo</div>
-          <p>I keep your Google listing active — posting updates, replying to every review, keeping your hours and photos current. This is one of the most hands-on things I offer, since done right it's weekly work, not a set-it-and-forget-it job — priced to match the real time it takes.</p>
-          <span class="atime">⏱ Starts within a few days</span>
-          <p style="font-size:0.76rem; color:var(--ink-soft); margin:12px 0 0; font-style:italic;">If you already have a Google Business Profile, I'll need you to grant me access to manage it. That access is treated the same as any other part of your business — handled professionally, and returned in full if we ever part ways.</p>
-        </div>
-
-        <div class="addon-card">
-          <div class="aicon">📅</div>
-          <h3>Booking &amp; Appointments</h3>
-          <div class="aprice">$75 setup + $35/mo</div>
-          <p>Customers can grab a time on your calendar straight from your website — no phone tag, no double-booking, no missed calls while your hands are busy on the job.</p>
-          <span class="atime">⏱ Set up in 3–5 days</span>
-          <p style="font-size:0.76rem; color:var(--ink-soft); margin:12px 0 0; font-style:italic;">Works best when every booking — online or by phone — ends up on the same calendar. If phone bookings stay on a separate notepad instead of getting added in, the online calendar won't know those times are taken, and double-booking can happen.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- REFERRAL BANNER -->
-  <section class="section" style="padding:56px 0;">
-    <div class="wrap">
-      <div class="referral-banner">
-        <div style="display:flex; align-items:center; gap:22px;">
-          <div class="rb-icon">🎁</div>
-          <div>
-            <h3>Refer a business, get 2 months of care free</h3>
-            <p>Know another business owner who needs a site? Refer them and once they sign up for a care plan, you get 2 months free — worth up to $500 on Premium Care.</p>
-          </div>
-        </div>
-        <a href="#contact" class="btn">Refer someone</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROCESS -->
-  <section class="section" id="process">
-    <div class="wrap">
-      <div class="section-head">
-        <div class="eyebrow" style="justify-content:center; display:flex;">How it works</div>
-        <h2>From first message to live site</h2>
-      </div>
-      <div class="process-list">
-        <div class="process-row">
-          <div class="step-num">01</div>
-          <h3>Free mockup</h3>
-          <p>Tell me about your business and I'll put together a free mockup — no cost, no obligation, so you can see it before deciding anything.</p>
-        </div>
-        <div class="process-row">
-          <div class="step-num">02</div>
-          <h3>Feedback &amp; revisions</h3>
-          <p>We go back and forth until it feels right. I guarantee a response within 24 hours at every step.</p>
-        </div>
-        <div class="process-row">
-          <div class="step-num">03</div>
-          <h3>Launch</h3>
-          <p>Once you're happy, I set up hosting and get it live — every site is delivered in less than a week.</p>
-        </div>
-        <div class="process-row">
-          <div class="step-num">04</div>
-          <h3>Ongoing care</h3>
-          <p>Optional monthly plan keeps it updated, backed up, and current — cancel anytime, no long-term contract.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- WHY / GUARANTEES -->
-  <section class="section section-alt" id="why">
-    <div class="wrap">
-      <div class="section-head">
-        <div class="eyebrow" style="justify-content:center; display:flex;">Why work with me</div>
-        <h2>Guarantees I can actually back up</h2>
-      </div>
-      <div class="why-grid">
-        <div class="why-card">
-          <div class="wicon">24h</div>
-          <h3>24-Hour Response</h3>
-          <p>Message me anytime — you'll hear back within 24 hours, guaranteed.</p>
-        </div>
-        <div class="why-card">
-          <div class="wicon">$0</div>
-          <h3>Free Mockup First</h3>
-          <p>See your site before you pay a cent. No risk, no pressure.</p>
-        </div>
-        <div class="why-card">
-          <div class="wicon">14d</div>
-          <h3>14-Day Money-Back</h3>
-          <p>Not happy after launch? Full refund within the first 14 days.</p>
-        </div>
-        <div class="why-card">
-          <div class="wicon">📱</div>
-          <h3>Mobile-Ready Guarantee</h3>
-          <p>Works perfectly on every device — if it doesn't, I fix it free.</p>
-        </div>
-        <div class="why-card">
-          <div class="wicon">✕</div>
-          <h3>No Long-Term Contract</h3>
-          <p>Monthly care plans are month-to-month — cancel whenever you want.</p>
-        </div>
-        <div class="why-card">
-          <div class="wicon">☏</div>
-          <h3>Direct Line to Me</h3>
-          <p>You text or call the person building your site — not a ticket queue.</p>
-        </div>
-        <div class="why-card">
-          <div class="wicon">🔒</div>
-          <h3>Price-Lock Guarantee</h3>
-          <p>Your care plan rate won't increase for as long as you stay on it.</p>
-        </div>
-        <div class="why-card">
-          <div class="wicon">🎁</div>
-          <h3>Referral Reward</h3>
-          <p>Worth up to $500 — see the referral program above.</p>
-        </div>
-        <div class="why-card">
-          <div class="wicon">📍</div>
-          <h3>Local &amp; In-Person</h3>
-          <p>Based in Alpine, TX — happy to meet face-to-face to talk strategy.</p>
-        </div>
-        <div class="why-card">
-          <div class="wicon">🔍</div>
-          <h3>Free SEO Setup</h3>
-          <p>Every build includes basic search optimization, no extra charge.</p>
-        </div>
-        <div class="why-card">
-          <div class="wicon">🛡</div>
-          <h3>Security &amp; Backups</h3>
-          <p>Your site is monitored and backed up so nothing gets lost.</p>
-        </div>
-        <div class="why-card">
-          <div class="wicon">📈</div>
-          <h3>Annual Health Check</h3>
-          <p>A yearly review of speed, security, and what could be improved.</p>
-        </div>
-        <div class="why-card">
-          <div class="wicon">🤝</div>
-          <h3>30-Day Check-In</h3>
-          <p>A month after launch, I follow up to make sure everything's working for you.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section class="section" id="contact">
-    <div class="wrap contact-grid">
-      <div class="contact-info">
-        <div class="eyebrow">Get in touch</div>
-        <h3>Get your free mockup</h3>
-        <p style="color:var(--ink-soft); margin-top:0;">Tell me a bit about your business — I'll put together a free mockup with no obligation. You'll hear back within 24 hours, and if you're nearby, I'm happy to meet in person to talk strategy.</p>
-        <div class="info-row"><span class="k">Email</span><a class="v" href="mailto:hello@mercermade.example">hello@mercermade.example</a></div>
-        <div class="info-row"><span class="k">Phone</span><a class="v" href="tel:+19155408410">(915) 540-8410</a></div>
-        <div class="info-row"><span class="k">Based in</span><span class="v">Alpine, TX — in-person meetings available</span></div>
-      </div>
-      <form onsubmit="event.preventDefault(); document.getElementById('form-success').style.display='block'; this.reset();">
-        <div class="field">
-          <label for="name">Name</label>
-          <input id="name" type="text" required placeholder="Your name">
-        </div>
-        <div class="field">
-          <label for="business">Business name</label>
-          <input id="business" type="text" placeholder="Your business">
-        </div>
-        <div class="field">
-          <label for="need">What do you need?</label>
-          <select id="need">
-            <option>A new website</option>
-            <option>A redesign of my current site</option>
-            <option>Just the monthly care plan</option>
-            <option>Not sure yet</option>
-          </select>
-        </div>
-        <div class="field">
-          <label for="email">Email or phone</label>
-          <input id="email" type="text" required placeholder="How should I reach you?">
-        </div>
-        <button type="submit" class="btn btn-solid">Request my free mockup</button>
-        <p class="form-note" id="form-success" style="display:none;">Thanks — you'll hear back within 24 hours.</p>
-      </form>
-    </div>
-  </section>
-
 </main>
 
-<footer>
-  <div class="wrap">
-    <a href="#top" class="logo"><span class="mark">&lt;/&gt;</span><span class="word">Mercer Made</span></a>
-    <ul class="foot-links">
-      <li><a href="#work">Work</a></li>
-      <li><a href="#pricing">Pricing</a></li>
-      <li><a href="#why">Guarantees</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </div>
-  <div class="wrap fine">© 2026 Mercer Made — Mercer Fleming, Alpine, TX. Web design for small businesses. Sample site — swap in your real photos and case studies as your portfolio grows.</div>
-</footer>
-
-<script>
-  document.querySelector('.nav-toggle')?.addEventListener('click', () => {
-    document.querySelector('.nav-links').style.display =
-      document.querySelector('.nav-links').style.display === 'flex' ? 'none' : 'flex';
-  });
-</script>
-
+<footer class="wrap">© 2026 Mercer Made · Alpine, Texas</footer>
 </body>
 </html>
