@@ -140,9 +140,17 @@
   .foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;align-items:center}
   footer a{color:#cdbfa9}
 </style>
+<style id="mm-bar-style">
+#mm-bar{position:sticky;top:0;z-index:99999;height:40px;box-sizing:border-box;background:#201F2B;color:#EEE0C4;font:500 13px/1 Inter,system-ui,sans-serif;padding:0 16px;display:flex;align-items:center;justify-content:space-between;gap:12px;white-space:nowrap}
+#mm-bar .mm-note{overflow:hidden;text-overflow:ellipsis}
+#mm-bar a{color:#F0A83B;text-decoration:none;font-weight:600;flex:none}
+#mm-bar a:hover{text-decoration:underline}
+header{top:40px !important}
+@media (max-width:560px){#mm-bar .mm-long{display:none}}
+</style>
 </head>
 <body>
-<div style="position:sticky;top:0;z-index:99999;background:#201F2B;color:#EEE0C4;font:500 13px/1.4 Inter,system-ui,sans-serif;padding:8px 16px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap"><span>A sample website designed by <strong>Mercer Made</strong> &mdash; not this business&rsquo;s official site</span><a href="/" style="color:#F0A83B;text-decoration:none">&larr; Back to Mercer Made</a></div>
+<div id="mm-bar"><span class="mm-note">Sample site by <strong>Mercer Made</strong><span class="mm-long"> &mdash; not this business&rsquo;s official site</span></span><a href="/">&larr; Back to Mercer Made</a></div>
 
 <div class="sample">Sample design prepared for Cheshire Cat Antiques — photos and details to be confirmed with the owners.</div>
 
