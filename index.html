@@ -28,12 +28,17 @@
   .intro p+p{margin-top:12px}
   section h2{font:600 22px Sora,sans-serif;margin-bottom:6px}
   section .sub{color:var(--ink-soft);font-size:15px;margin-bottom:22px}
-  .sites{list-style:none;display:grid;gap:14px;padding-bottom:64px}
-  .sites a{display:flex;align-items:center;justify-content:space-between;gap:16px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 22px;text-decoration:none;transition:transform .15s,border-color .15s,box-shadow .15s}
-  .sites a:hover{transform:translateY(-2px);border-color:var(--coral);box-shadow:0 8px 24px rgba(32,31,43,.08)}
+  .sites{list-style:none;display:grid;gap:16px;padding-bottom:64px}
+  .sites a{display:flex;align-items:center;gap:18px;background:linear-gradient(135deg,#EDC28C 0%,#E2A96A 100%);border:1px solid #C98C4C;border-radius:18px;padding:18px 20px;text-decoration:none;box-shadow:0 3px 0 #B97C3E,0 8px 20px rgba(120,60,20,.18);transition:transform .18s,box-shadow .18s,border-color .18s}
+  .sites a:hover{transform:translateY(-3px);border-color:var(--coral);box-shadow:0 3px 0 var(--coral),0 14px 30px rgba(201,72,52,.18)}
+  .tile{flex:none;width:52px;height:52px;border-radius:14px;display:grid;place-items:center;color:#fff;font:700 20px Sora,sans-serif;box-shadow:inset 0 -3px 0 rgba(0,0,0,.15)}
+  .t1{background:#B4452F}.t2{background:#D9822B}.t3{background:#C9604A}
+  .sites .txt{flex:1;min-width:0}
   .sites strong{display:block;font:600 18px Sora,sans-serif;margin-bottom:2px}
-  .sites small{color:var(--ink-soft);font-size:14px}
-  .arrow{flex:none;width:36px;height:36px;border-radius:50%;background:var(--paper);display:grid;place-items:center;color:var(--coral-d);font-weight:600}
+  .sites small{color:#4A3A2C;font-size:14px}
+  .arrow{flex:none;display:flex;align-items:center;gap:6px;background:var(--coral);color:#fff;font-weight:600;font-size:14px;padding:9px 16px;border-radius:999px;transition:background .18s}
+  .sites a:hover .arrow{background:var(--coral-d)}
+  @media (max-width:520px){.arrow .lbl{display:none}.arrow{padding:9px 12px}}
   .contact{border-top:1px solid var(--line);padding:48px 0 64px}
   .btn{display:inline-block;margin-top:14px;background:var(--coral);color:#fff;text-decoration:none;font-weight:600;padding:12px 22px;border-radius:999px}
   .btn:hover{background:var(--coral-d)}
@@ -66,9 +71,9 @@
     <h2>Find your sample below</h2>
     <p class="sub">Each of these was designed for a specific local business. Click yours to see it in full.</p>
     <ul class="sites">
-      <li><a href="/work/cheshire-cat-antiques/"><div><strong>Cheshire Cat Antiques</strong><small>Antiques &amp; Texana · Alpine, TX</small></div><span class="arrow">→</span></a></li>
-      <li><a href="/work/sharpside-construction/"><div><strong>Sharpside Construction</strong><small>General contractor · Alpine, TX</small></div><span class="arrow">→</span></a></li>
-      <li><a href="/work/mercer-properties/"><div><strong>Mercer Properties</strong><small>Office leasing · El Paso, TX</small></div><span class="arrow">→</span></a></li>
+      <li><a href="/work/cheshire-cat-antiques/"><span class="tile t1">CC</span><div class="txt"><strong>Cheshire Cat Antiques</strong><small>Antiques &amp; Texana · Alpine, TX</small></div><span class="arrow"><span class="lbl">View sample</span> →</span></a></li>
+      <li><a href="/work/sharpside-construction/"><span class="tile t2">SC</span><div class="txt"><strong>Sharpside Construction</strong><small>General contractor · Alpine, TX</small></div><span class="arrow"><span class="lbl">View sample</span> →</span></a></li>
+      <li><a href="/work/mercer-properties/"><span class="tile t3">MP</span><div class="txt"><strong>Mercer Properties</strong><small>Office leasing · El Paso, TX</small></div><span class="arrow"><span class="lbl">View sample</span> →</span></a></li>
     </ul>
   </section>
 
